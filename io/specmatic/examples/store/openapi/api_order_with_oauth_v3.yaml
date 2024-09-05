@@ -344,7 +344,11 @@ components:
           tokenUrl: http://localhost:8083/realms/specmatic/protocol/openid-connect/token
           scopes:
             email: email
+    openIdConnect:
+      type: openIdConnect
+      openIdConnectUrl: http://localhost:8083/realms/specmatic/.well-known/openid-configuration
 
 security:
   - oAuth2AuthCode: []
+  - openIdConnect: []
 
